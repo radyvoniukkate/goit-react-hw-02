@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import "./Feedback.module.css"
+import styles from "./Feedback.module.css"
 
 const Feedback = ({ states, totalFeedback, positiveFeedback }) => {
   if (totalFeedback === 0) {
     return (
-      <div>
+      <div className={styles.feedback}>
         <p>No feedback given</p>
       </div>
     );
